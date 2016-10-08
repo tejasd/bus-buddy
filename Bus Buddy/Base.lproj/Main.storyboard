@@ -33,7 +33,7 @@
                                     <action selector="selectWorkAddress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iN9-YD-rbw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xrr-16-m6J">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xrr-16-m6J">
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <state key="normal" title="Go"/>
                             </button>
@@ -65,6 +65,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="goButton" destination="xrr-16-m6J" id="iyi-l7-VO5"/>
                         <outlet property="homeAddressLabel" destination="KKX-FI-YlK" id="sMP-gG-xKZ"/>
                         <outlet property="schoolWorkAddressLabel" destination="L6S-GT-hdt" id="Eoz-hf-HAN"/>
                     </connections>

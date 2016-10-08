@@ -18,6 +18,7 @@
 @property (nonatomic, assign) BOOL isGettingWorkAddress;
 @property (weak, nonatomic) IBOutlet UILabel *homeAddressLabel;
 @property (weak, nonatomic) IBOutlet UILabel *schoolWorkAddressLabel;
+@property (weak, nonatomic) IBOutlet UIButton *goButton;
 
 
 @end
@@ -73,9 +74,11 @@ didAutocompleteWithPlace:(GMSPlace *)place {
         self.schoolWorkAddressLabel.text = place.name;
     }
     
-    NSLog(@"Place name %@", place.name);
-    NSLog(@"Place address %@", place.formattedAddress);
-    NSLog(@"Place attributions %@", place.attributions.string);
+//    NSLog(@"Place name %@", place.name);
+//    NSLog(@"Place address %@", place.formattedAddress);
+//    NSLog(@"Place attributions %@", place.attributions.string);
+    
+    self.goButton.enabled = self.workSchoolAddress && self.homeAddress;
 }
 
 - (void)viewController:(GMSAutocompleteViewController *)viewController
