@@ -27,9 +27,6 @@
                     <constraint firstItem="cdw-xT-F7X" firstAttribute="leading" secondItem="pw6-bJ-Y2c" secondAttribute="leadingMargin" id="pX2-8r-kM2"/>
                 </constraints>
             </tableViewCellContentView>
-            <connections>
-                <outlet property="busName" destination="cdw-xT-F7X" id="HPw-ae-xnU"/>
-            </connections>
             <point key="canvasLocation" x="47" y="-64"/>
         </tableViewCell>
     </objects>

@@ -18,7 +18,6 @@
 		902B471D1DA955BB008679BA /* Bus_BuddyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 902B471C1DA955BB008679BA /* Bus_BuddyUITests.m */; };
 		909A7A941DA980730039F8D2 /* BusSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 909A7A931DA980730039F8D2 /* BusSelectionViewController.m */; };
 		909A7A971DA986A30039F8D2 /* BusScheduleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 909A7A961DA986A30039F8D2 /* BusScheduleTableViewCell.m */; };
-		909A7A9A1DA989560039F8D2 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 909A7A991DA989560039F8D2 /* TableViewController.m */; };
 		909A7A9C1DA991C20039F8D2 /* BusScheduleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 909A7A9B1DA991C20039F8D2 /* BusScheduleTableViewCell.xib */; };
 		9B5A07FFFEF7BC1579FDF5B2 /* libPods-Bus BuddyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8C00D53D96C5FDDDAA2FD7 /* libPods-Bus BuddyTests.a */; };
 		9C697B866E814742A675EE75 /* libPods-Bus Buddy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D234E712345FA82E4628242 /* libPods-Bus Buddy.a */; };
@@ -66,8 +65,6 @@
 		909A7A931DA980730039F8D2 /* BusSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusSelectionViewController.m; sourceTree = "<group>"; };
 		909A7A951DA986A30039F8D2 /* BusScheduleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusScheduleTableViewCell.h; sourceTree = "<group>"; };
 		909A7A961DA986A30039F8D2 /* BusScheduleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusScheduleTableViewCell.m; sourceTree = "<group>"; };
-		909A7A981DA989560039F8D2 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
-		909A7A991DA989560039F8D2 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		909A7A9B1DA991C20039F8D2 /* BusScheduleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BusScheduleTableViewCell.xib; sourceTree = "<group>"; };
 		D034B4EEF57DDA2025FB5C59 /* Pods-Bus Buddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bus Buddy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bus Buddy/Pods-Bus Buddy.release.xcconfig"; sourceTree = "<group>"; };
 		DCBA89339A862A2C05A503AE /* Pods-Bus Buddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bus Buddy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bus Buddy/Pods-Bus Buddy.debug.xcconfig"; sourceTree = "<group>"; };
@@ -152,8 +149,6 @@
 				909A7A961DA986A30039F8D2 /* BusScheduleTableViewCell.m */,
 				909A7A9B1DA991C20039F8D2 /* BusScheduleTableViewCell.xib */,
 				902B47001DA955BB008679BA /* Main.storyboard */,
-				909A7A981DA989560039F8D2 /* TableViewController.h */,
-				909A7A991DA989560039F8D2 /* TableViewController.m */,
 				902B47031DA955BB008679BA /* Assets.xcassets */,
 				902B47051DA955BB008679BA /* LaunchScreen.storyboard */,
 				902B47081DA955BB008679BA /* Info.plist */,
@@ -467,7 +462,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				902B46FF1DA955BB008679BA /* ViewController.m in Sources */,
-				909A7A9A1DA989560039F8D2 /* TableViewController.m in Sources */,
 				902B46FC1DA955BB008679BA /* AppDelegate.m in Sources */,
 				909A7A941DA980730039F8D2 /* BusSelectionViewController.m in Sources */,
 				909A7A971DA986A30039F8D2 /* BusScheduleTableViewCell.m in Sources */,

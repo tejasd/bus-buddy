@@ -35,9 +35,9 @@
     
     BusScheduleTableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:cellID];
     
-    if (cell == nil) {
-        cell = (BusScheduleTableViewCell *)[[[NSBundle mainBundle] loadNibNamed:@"BusScheduleTableViewCell" owner:self options:nil] firstObject];
-    }
+//    if (cell == nil) {
+//        cell = (BusScheduleTableViewCell *)[[[NSBundle mainBundle] loadNibNamed:@"BusScheduleTableViewCell" owner:self options:nil] firstObject];
+//    }
     
     cell.busName.text = @"EB 123";
     
@@ -45,8 +45,10 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    
     return 5;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
 }
 
