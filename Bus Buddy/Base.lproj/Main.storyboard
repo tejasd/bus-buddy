@@ -161,6 +161,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EHd-pi-hgc">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="OK"/>
+                                <connections>
+                                    <segue destination="9pD-fD-Zzp" kind="show" id="t5R-qf-sIP"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -176,6 +179,53 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qic-bs-rSa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1597.5999999999999" y="123.68815592203899"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="Q5K-SB-s57">
+            <objects>
+                <viewController id="kiu-i7-DEr" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LvT-qw-u9A"/>
+                        <viewControllerLayoutGuide type="bottom" id="n3o-Ie-pgC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bAs-uc-JYX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="sKZ-sx-6Lc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2fW-8v-0a3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2420" y="1039"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="jYW-Jn-tUB">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="dc4-L1-Ygx" customClass="FrequentBusesViewController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="l0E-PE-0Q1"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qnp-xB-SWl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2420" y="359"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="PeB-QB-Kzf">
+            <objects>
+                <tabBarController id="9pD-fD-Zzp" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="BZl-yS-eSi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="kiu-i7-DEr" kind="relationship" relationship="viewControllers" id="L7p-GJ-Z4u"/>
+                        <segue destination="dc4-L1-Ygx" kind="relationship" relationship="viewControllers" id="hsc-1k-CwK"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xGL-db-7GK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1598" y="878"/>
         </scene>
     </scenes>
     <resources>
