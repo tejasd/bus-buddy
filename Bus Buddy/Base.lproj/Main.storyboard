@@ -19,26 +19,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJ8-Cu-Krw">
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="yJ8-Cu-Krw">
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <state key="normal" title="Select Home Address"/>
+                                <connections>
+                                    <action selector="selectHomeAddress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="taN-Yb-gGH"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Nl-eE-hLY">
-                                <frame key="frameInset" minX="78" minY="394" width="218" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Select Work Address">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="1Nl-eE-hLY">
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Select Work Address"/>
+                                <connections>
+                                    <action selector="selectWorkAddress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iN9-YD-rbw"/>
+                                </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xrr-16-m6J">
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <state key="normal" title="Go"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🏡" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KKX-FI-YlK">
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 🏫 💼" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L6S-GT-hdt">
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="xrr-16-m6J" firstAttribute="top" secondItem="L6S-GT-hdt" secondAttribute="bottom" constant="127" id="3Va-Iu-9hd"/>
+                            <constraint firstItem="L6S-GT-hdt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5SL-Ux-XIa"/>
+                            <constraint firstItem="L6S-GT-hdt" firstAttribute="top" secondItem="1Nl-eE-hLY" secondAttribute="bottom" constant="22" id="9pc-oN-v7P"/>
+                            <constraint firstItem="1Nl-eE-hLY" firstAttribute="top" secondItem="KKX-FI-YlK" secondAttribute="bottom" constant="103" id="E1p-2E-URZ"/>
                             <constraint firstItem="yJ8-Cu-Krw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="172" id="Esg-RC-q4G"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yJ8-Cu-Krw" secondAttribute="bottom" constant="419" id="OjW-a9-0ry"/>
-                            <constraint firstItem="yJ8-Cu-Krw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="62" id="c1T-eI-FiB"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="yJ8-Cu-Krw" secondAttribute="trailing" constant="63" id="k7x-eP-aKe"/>
+                            <constraint firstItem="KKX-FI-YlK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mne-sT-ruu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1Nl-eE-hLY" secondAttribute="trailing" id="P9U-ZB-rPy"/>
+                            <constraint firstItem="yJ8-Cu-Krw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="c1T-eI-FiB"/>
+                            <constraint firstItem="KKX-FI-YlK" firstAttribute="top" secondItem="yJ8-Cu-Krw" secondAttribute="bottom" constant="22" id="fIF-Zt-ujd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yJ8-Cu-Krw" secondAttribute="trailing" id="k7x-eP-aKe"/>
+                            <constraint firstItem="xrr-16-m6J" firstAttribute="centerX" secondItem="L6S-GT-hdt" secondAttribute="centerX" id="nkI-Ft-JMU"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="1Nl-eE-hLY" secondAttribute="leading" id="z87-zq-IFb"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="homeAddressLabel" destination="KKX-FI-YlK" id="sMP-gG-xKZ"/>
+                        <outlet property="schoolWorkAddressLabel" destination="L6S-GT-hdt" id="Eoz-hf-HAN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
