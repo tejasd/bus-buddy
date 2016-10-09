@@ -8,10 +8,12 @@
 
 #import "BusSelectionViewController.h"
 #import "BusScheduleTableViewCell.h"
+#import "BusRoute.h"
 
 @interface BusSelectionViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *dummyImageView;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (nonatomic, strong) NSArray <BusRoute *> *busRoutes;
 
 @end
 
@@ -22,6 +24,20 @@
     // Do any additional setup after loading the view.
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
+    
+    // Fake data - fetch this from somewhere
+    self.busRoutes = @[
+                       [[BusRoute alloc] initWithBusName:@"EB 445" time:@"6:45 AM - 7:30 AM" onTimeOrLate:@"On-time (98%)" isLate:NO],
+                       [[BusRoute alloc] initWithBusName:@"AM 887" time:@"6:40 AM - 7:25 AM" onTimeOrLate:@"On-time (95%)" isLate:NO],
+                       [[BusRoute alloc] initWithBusName:@"EB 445" time:@"7:15 AM - 8:00 AM" onTimeOrLate:@"Often late (9%)" isLate:YES],
+                       [[BusRoute alloc] initWithBusName:@"EB 445" time:@"7:30 AM - 8:15 AM" onTimeOrLate:@"Often late (11%)" isLate:YES],
+                       [[BusRoute alloc] initWithBusName:@"EB 445" time:@"7:45 AM - 8:30 AM" onTimeOrLate:@"Often late (10%)" isLate:YES],
+                       [[BusRoute alloc] initWithBusName:@"EB 446" time:@"6:45 AM - 8:15 AM" onTimeOrLate:@"Often late (40%)" isLate:YES]
+                       ];
+    
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -39,13 +55,13 @@
 //        cell = (BusScheduleTableViewCell *)[[[NSBundle mainBundle] loadNibNamed:@"BusScheduleTableViewCell" owner:self options:nil] firstObject];
 //    }
     
-    cell.busName.text = @"EB 123";
+    [cell setBusRoute:self.busRoutes[indexPath.row]];
     
     return cell;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 5;
+    return self.busRoutes.count;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

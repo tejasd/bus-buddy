@@ -23,6 +23,7 @@
 		909A7AA51DA9CD700039F8D2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 909A7AA41DA9CD700039F8D2 /* GoogleService-Info.plist */; };
 		909A7AA61DA9CD720039F8D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 902B46FB1DA955BB008679BA /* AppDelegate.m */; };
 		909A7AA71DA9CD720039F8D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 902B46FB1DA955BB008679BA /* AppDelegate.m */; };
+		90A18A5B1DAA6AEF00B3544A /* BusRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A18A5A1DAA6AEF00B3544A /* BusRoute.m */; };
 		9B5A07FFFEF7BC1579FDF5B2 /* libPods-Bus BuddyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8C00D53D96C5FDDDAA2FD7 /* libPods-Bus BuddyTests.a */; };
 		9C697B866E814742A675EE75 /* libPods-Bus Buddy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D234E712345FA82E4628242 /* libPods-Bus Buddy.a */; };
 /* End PBXBuildFile section */
@@ -74,6 +75,8 @@
 		909A7A9E1DA9A83C0039F8D2 /* FrequentBusesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrequentBusesViewController.m; sourceTree = "<group>"; };
 		909A7AA31DA9C1930039F8D2 /* Bus Buddy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Bus Buddy.entitlements"; sourceTree = "<group>"; };
 		909A7AA41DA9CD700039F8D2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		90A18A591DAA6AEF00B3544A /* BusRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusRoute.h; sourceTree = "<group>"; };
+		90A18A5A1DAA6AEF00B3544A /* BusRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusRoute.m; sourceTree = "<group>"; };
 		D034B4EEF57DDA2025FB5C59 /* Pods-Bus Buddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bus Buddy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bus Buddy/Pods-Bus Buddy.release.xcconfig"; sourceTree = "<group>"; };
 		DCBA89339A862A2C05A503AE /* Pods-Bus Buddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bus Buddy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bus Buddy/Pods-Bus Buddy.debug.xcconfig"; sourceTree = "<group>"; };
 		EF74BDABCA88AC1468056DC5 /* Pods-Bus BuddyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bus BuddyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bus BuddyUITests/Pods-Bus BuddyUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -155,6 +158,8 @@
 				902B46FE1DA955BB008679BA /* ViewController.m */,
 				909A7A921DA980730039F8D2 /* BusSelectionViewController.h */,
 				909A7A931DA980730039F8D2 /* BusSelectionViewController.m */,
+				90A18A591DAA6AEF00B3544A /* BusRoute.h */,
+				90A18A5A1DAA6AEF00B3544A /* BusRoute.m */,
 				909A7A951DA986A30039F8D2 /* BusScheduleTableViewCell.h */,
 				909A7A9D1DA9A83C0039F8D2 /* FrequentBusesViewController.h */,
 				909A7A9E1DA9A83C0039F8D2 /* FrequentBusesViewController.m */,
@@ -485,6 +490,7 @@
 				909A7A941DA980730039F8D2 /* BusSelectionViewController.m in Sources */,
 				909A7A971DA986A30039F8D2 /* BusScheduleTableViewCell.m in Sources */,
 				902B46F91DA955BB008679BA /* main.m in Sources */,
+				90A18A5B1DAA6AEF00B3544A /* BusRoute.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class BusRoute;
+
 @interface BusScheduleTableViewCell : UITableViewCell
-@property (weak, nonatomic) IBOutlet UILabel *busName;
+
+- (void)setBusRoute:(BusRoute *)busRoute;
 
 @end
