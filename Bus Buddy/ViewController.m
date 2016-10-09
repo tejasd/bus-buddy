@@ -30,7 +30,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.isGettingHomeAddress = NO;
     self.isGettingWorkAddress = NO;
-    self.goButton.enabled = YES; //DEBUG
+//    self.goButton.enabled = YES; //DEBUG
 }
 
 - (IBAction)selectHomeAddress:(id)sender {
