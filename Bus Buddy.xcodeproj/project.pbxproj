@@ -20,6 +20,9 @@
 		909A7A971DA986A30039F8D2 /* BusScheduleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 909A7A961DA986A30039F8D2 /* BusScheduleTableViewCell.m */; };
 		909A7A9C1DA991C20039F8D2 /* BusScheduleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 909A7A9B1DA991C20039F8D2 /* BusScheduleTableViewCell.xib */; };
 		909A7A9F1DA9A83C0039F8D2 /* FrequentBusesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 909A7A9E1DA9A83C0039F8D2 /* FrequentBusesViewController.m */; };
+		909A7AA51DA9CD700039F8D2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 909A7AA41DA9CD700039F8D2 /* GoogleService-Info.plist */; };
+		909A7AA61DA9CD720039F8D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 902B46FB1DA955BB008679BA /* AppDelegate.m */; };
+		909A7AA71DA9CD720039F8D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 902B46FB1DA955BB008679BA /* AppDelegate.m */; };
 		9B5A07FFFEF7BC1579FDF5B2 /* libPods-Bus BuddyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8C00D53D96C5FDDDAA2FD7 /* libPods-Bus BuddyTests.a */; };
 		9C697B866E814742A675EE75 /* libPods-Bus Buddy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D234E712345FA82E4628242 /* libPods-Bus Buddy.a */; };
 /* End PBXBuildFile section */
@@ -69,6 +72,8 @@
 		909A7A9B1DA991C20039F8D2 /* BusScheduleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BusScheduleTableViewCell.xib; sourceTree = "<group>"; };
 		909A7A9D1DA9A83C0039F8D2 /* FrequentBusesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrequentBusesViewController.h; sourceTree = "<group>"; };
 		909A7A9E1DA9A83C0039F8D2 /* FrequentBusesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrequentBusesViewController.m; sourceTree = "<group>"; };
+		909A7AA31DA9C1930039F8D2 /* Bus Buddy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Bus Buddy.entitlements"; sourceTree = "<group>"; };
+		909A7AA41DA9CD700039F8D2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D034B4EEF57DDA2025FB5C59 /* Pods-Bus Buddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bus Buddy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bus Buddy/Pods-Bus Buddy.release.xcconfig"; sourceTree = "<group>"; };
 		DCBA89339A862A2C05A503AE /* Pods-Bus Buddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bus Buddy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bus Buddy/Pods-Bus Buddy.debug.xcconfig"; sourceTree = "<group>"; };
 		EF74BDABCA88AC1468056DC5 /* Pods-Bus BuddyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bus BuddyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bus BuddyUITests/Pods-Bus BuddyUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -142,8 +147,10 @@
 		902B46F61DA955BB008679BA /* Bus Buddy */ = {
 			isa = PBXGroup;
 			children = (
+				909A7AA31DA9C1930039F8D2 /* Bus Buddy.entitlements */,
 				902B46FA1DA955BB008679BA /* AppDelegate.h */,
 				902B46FB1DA955BB008679BA /* AppDelegate.m */,
+				909A7AA41DA9CD700039F8D2 /* GoogleService-Info.plist */,
 				902B46FD1DA955BB008679BA /* ViewController.h */,
 				902B46FE1DA955BB008679BA /* ViewController.m */,
 				909A7A921DA980730039F8D2 /* BusSelectionViewController.h */,
@@ -275,6 +282,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = LLVD2YCLN9;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					902B470C1DA955BB008679BA = {
 						CreatedOnToolsVersion = 8.0;
@@ -317,6 +329,7 @@
 			files = (
 				902B47071DA955BB008679BA /* LaunchScreen.storyboard in Resources */,
 				902B47041DA955BB008679BA /* Assets.xcassets in Resources */,
+				909A7AA51DA9CD700039F8D2 /* GoogleService-Info.plist in Resources */,
 				902B47021DA955BB008679BA /* Main.storyboard in Resources */,
 				909A7A9C1DA991C20039F8D2 /* BusScheduleTableViewCell.xib in Resources */,
 			);
@@ -479,6 +492,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				909A7AA61DA9CD720039F8D2 /* AppDelegate.m in Sources */,
 				902B47121DA955BB008679BA /* Bus_BuddyTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -487,6 +501,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				909A7AA71DA9CD720039F8D2 /* AppDelegate.m in Sources */,
 				902B471D1DA955BB008679BA /* Bus_BuddyUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -621,10 +636,12 @@
 			baseConfigurationReference = DCBA89339A862A2C05A503AE /* Pods-Bus Buddy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Bus Buddy/Bus Buddy.entitlements";
 				DEVELOPMENT_TEAM = LLVD2YCLN9;
 				INFOPLIST_FILE = "Bus Buddy/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "co.tejasd.busbuddy.Bus-Buddy";
+				PRODUCT_BUNDLE_IDENTIFIER = co.tejasd.busbuddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -634,10 +651,12 @@
 			baseConfigurationReference = D034B4EEF57DDA2025FB5C59 /* Pods-Bus Buddy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Bus Buddy/Bus Buddy.entitlements";
 				DEVELOPMENT_TEAM = LLVD2YCLN9;
 				INFOPLIST_FILE = "Bus Buddy/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "co.tejasd.busbuddy.Bus-Buddy";
+				PRODUCT_BUNDLE_IDENTIFIER = co.tejasd.busbuddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

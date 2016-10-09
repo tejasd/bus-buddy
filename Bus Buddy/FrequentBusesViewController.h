@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FrequentBusesViewController : UIPageViewController
+@interface FrequentBusesViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
 
 @end

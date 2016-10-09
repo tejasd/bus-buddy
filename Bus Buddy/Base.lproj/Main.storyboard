@@ -180,6 +180,44 @@
             </objects>
             <point key="canvasLocation" x="1597.5999999999999" y="123.68815592203899"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="nP8-pM-qdG">
+            <objects>
+                <tableViewController id="Fd0-4y-XBL" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="1nu-U4-GWN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="currBusStatus" id="gao-4w-WZN">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gao-4w-WZN" id="117-nK-1bt">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KG7-ls-nN1">
+                                            <frame key="frameInset" minX="8" minY="11" width="42" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Fd0-4y-XBL" id="2mh-Ir-1FN"/>
+                            <outlet property="delegate" destination="Fd0-4y-XBL" id="fjW-Pn-yam"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" id="1yQ-P5-Pm2"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8dp-hj-YTi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2420" y="215"/>
+        </scene>
         <!--Item 2-->
         <scene sceneID="Q5K-SB-s57">
             <objects>
@@ -199,16 +237,6 @@
             </objects>
             <point key="canvasLocation" x="2420" y="1039"/>
         </scene>
-        <!--Item-->
-        <scene sceneID="jYW-Jn-tUB">
-            <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="dc4-L1-Ygx" customClass="FrequentBusesViewController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="l0E-PE-0Q1"/>
-                </pageViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Qnp-xB-SWl" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2420" y="359"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="PeB-QB-Kzf">
             <objects>
@@ -220,7 +248,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="kiu-i7-DEr" kind="relationship" relationship="viewControllers" id="L7p-GJ-Z4u"/>
-                        <segue destination="dc4-L1-Ygx" kind="relationship" relationship="viewControllers" id="hsc-1k-CwK"/>
+                        <segue destination="Fd0-4y-XBL" kind="relationship" relationship="viewControllers" id="VTH-DI-YnN"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xGL-db-7GK" userLabel="First Responder" sceneMemberID="firstResponder"/>
